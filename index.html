@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- plus jakarta sans fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Bootstrap Icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- font awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <header id="header" class="p-2">
+        <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg bg-primary-0 sticky-lg-top shadow-none">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="#header"><img src="Assets/image/logo.png" alt="Logo" class="logo_img">
+                </a>
+                <!-- Navbar toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active plus-jakarta-sans-semi-bold" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link plus-jakarta-sans-semi-bold" href="#"><Ice-Creams></Ice-Creams></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link plus-jakarta-sans-semi-bold" href="#">Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link plus-jakarta-sans-semi-bold" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link plus-jakarta-sans-semi-bold" href="#">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2 mb-lg-0">
+
+                        <button class="button " onclick="window.location.href='register.php'">
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                            </svg>
+
+
+                            <div class="regtxt plus-jakarta-sans-semi-bold">
+                                Register
+                            </div>
+
+                        </button>
+
+                        <button class="Btn">
+
+                            <div class="sign"><svg viewBox="0 0 512 512">
+                                    <path
+                                        d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                                    </path>
+                                </svg></div>
+
+                            <div class="text plus-jakarta-sans-semi-bold" onclick="window.location.href='login.php'">
+                                Login</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+       
+        <div class="position-relative w-100" style="height: 100vh; overflow: hidden;">
+            <img src="Assets/image/slider.jpg" alt="Background" class="w-100 h-100 position-absolute top-0 start-0"
+                style="object-fit: cover; z-index:1;">
+
+            <section class="position-relative w-100 h-100" style="z-index:2;">
+                <img src="Assets/image/bn.png" alt="Ice Cream Overlay"
+                    class="img-fluid w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; z-index:1;">
+
+                <div class="container position-relative h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h5 class="text-danger fw-bold">THE BEST PLACE FOR ICE-CREAM</h5>
+                            <h1 class="display-5 plus-jakarta-sans-semi-bold w-100">
+                                Delicious ice cream served<br>
+                                with care and reliability,<br>
+                                at a price you will love
+                            </h1>
+                            <p class="my-4 plus-jakarta-sans-semi fw-light text-muted">
+                                Indulge in a variety of flavors made from fresh ingredients. Every scoop is crafted for
+                                maximum taste and enjoyment.
+                            </p>
+                            <a href="#" class="btn btn-pink px-4 py-2 plus-jakarta-sans-semi fw-medium">Order
+                                Ice-Cream</a>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Order Section -->
+        <div class="container-fluid p-5" style="background-color: #F6F7F9;">
+            <div class="row mb-4">
+                <div class="col-lg-5">
+                    <div class="p-3 bg-white shadow-sm rounded">
+                        <!-- Order Header -->
+                        <div class="pickup d-flex align-content-center gap-1 align-items-center p-1 my-2">
+                            <img src="Assets/image/products/687180636_012c012ccc@2x.jpg" alt="icecream-icon"
+                                style="width: 1rem;height: 1rem;" class="mx-1">
+                            <h6 class="mb-0 fw-bold plus-jakarta-sans-semi-bold">Order Ice Cream</h6>
+                        </div>
+
+                        <!-- Order Bar -->
+                        <div class="filter-bar">
+                            <div class="row">
+                                <!-- Flavor -->
+                                <div class="col-md-4 filter-item">
+                                    <span class="filter-label">Flavor</span>
+                                    <select class="form-select">
+                                        <option selected disabled>Select flavor</option>
+                                        <option>Chocolate</option>
+                                        <option>Vanilla</option>
+                                        <option>Strawberry</option>
+                                        <option>Mango</option>
+                                    </select>
+                                </div>
+                                <!-- Quantity -->
+                                <div class="col-md-4 filter-item">
+                                    <span class="filter-label">Quantity</span>
+                                    <input type="number" class="form-control" placeholder="e.g. 2 scoops">
+                                </div>
+                                <!-- Delivery Time -->
+                                <div class="col-md-4 filter-item">
+                                    <span class="filter-label">Delivery Time</span>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="timepicker"
+                                            placeholder="Select time">
+                                        <span class="input-group-text" id="clockIcon" style="cursor:pointer">
+                                            <i class="bi bi-clock"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Popular Ice Creams -->
+    <section class="container-fluid p-5" id="popular-icecream">
+        <div class="row">
+            <div class="col-lg-11">
+                <h2 class="plus-jakarta-sans-semi-bold">Popular Ice Creams</h2>
+            </div>
+            <div class="col-lg-1">
+                <a href="#">View All</a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+
+            <!-- Ice Cream 1 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Chocolate Delight</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Classic</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+
+                        <img src="Assets/image/type3.jpg" class="card-img p-1" alt="Chocolate Ice Cream">
+
+                        <!-- ice cream details -->
+                        <div class="row p-1">
+                            <div class="col-lg-4">
+                                <p class="text-muted">🍫 Rich Cocoa</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="text-muted">🍦 2 Scoops</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="text-muted">🥶 Chilled</p>
+                            </div>
+                        </div>
+
+                        <!-- price and order button -->
+                        <div class="row p-2">
+                            <div class="col-lg-6">
+                                <span class="h4 fw-bold m-0 p-0">$4.99</span>
+                                <span class="text-muted">/cup</span>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 2 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Strawberry Bliss</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Fruity</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-regular fa-heart" style="font-size:1.5rem;"></i>
+                            </div>
+                        </div>
+
+                        <img src="Assets/image/type5.png" class="card-img p-1" alt="Strawberry Ice Cream">
+
+                        <div class="row p-1">
+                            <div class="col-lg-4">
+                                <p class="text-muted">🍓 Fresh Berries</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="text-muted">🍦 1 Scoop</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="text-muted">🥶 Chilled</p>
+                            </div>
+                        </div>
+
+                        <div class="row p-2">
+                            <div class="col-lg-6">
+                                <span class="h4 fw-bold m-0 p-0">$3.49</span>
+                                <span class="text-muted">/cup</span>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 3 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Vanilla Dream</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Classic</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+
+                        <img src="Assets/image/products/product3-removebg-preview.png" class="card-img p-1"
+                            alt="Vanilla Ice Cream">
+
+                        <div class="row p-1">
+                            <div class="col-lg-4">
+                                <p class="text-muted">🍯 Creamy</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="text-muted">🍦 2 Scoops</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="text-muted">🥶 Chilled</p>
+                            </div>
+                        </div>
+
+                        <div class="row p-2">
+                            <div class="col-lg-6">
+                                <span class="h4 fw-bold m-0 p-0">$3.99</span>
+                                <span class="text-muted">/cup</span>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 4 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Mango Magic</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Seasonal</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-regular fa-heart" style="font-size:1.5rem;"></i>
+                            </div>
+                        </div>
+
+                        <img src="Assets/image/products/product13-removebg-preview.png" class="card-img p-1"
+                            alt="Mango Ice Cream">
+
+                        <div class="row p-1">
+                            <div class="col-lg-4">
+                                <p class="text-muted">🥭 Fresh Mango</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="text-muted">🍦 1 Scoop</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="text-muted">🥶 Chilled</p>
+                            </div>
+                        </div>
+
+                        <div class="row p-2">
+                            <div class="col-lg-6">
+                                <span class="h4 fw-bold m-0 p-0">$3.79</span>
+                                <span class="text-muted">/cup</span>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- recomendation ice-creams -->
+    <section class="container-fluid p-5" id="Recommendation-IceCream">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="plus-jakarta-sans-semi-bold text-muted">Recommended Ice Creams</h2>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Ice Cream 1 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Chocolate Delight</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Classic</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+                        <img src="Assets/image/products/product15-removebg-preview.png" class="card-img p-1"
+                            alt="Chocolate Ice Cream">
+                        <div class="row p-1 text-center">
+                            <div class="col-4">
+                                <p class="text-muted">🍫 Chocolate</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🍦 2 scoops</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🥶 Cold</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6"><span class="h4 fw-bold m-0 p-0">$4.99/</span><span
+                                    class="text-muted">cup</span></div>
+                            <div class="col-6 d-flex justify-content-end"><button class="btn btn-primary">Order
+                                    Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 2 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Strawberry Bliss</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Fruit</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-regular fa-heart" style="font-size:1.5rem;"></i>
+                            </div>
+                        </div>
+                        <img src="Assets/image/type5.png" class="card-img p-1" alt="Strawberry Ice Cream">
+                        <div class="row p-1 text-center">
+                            <div class="col-4">
+                                <p class="text-muted">🍓 Fresh</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🍦 3 scoops</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🥶 Cold</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6"><span class="h4 fw-bold m-0 p-0">$5.49/</span><span
+                                    class="text-muted">cup</span></div>
+                            <div class="col-6 d-flex justify-content-end"><button class="btn btn-primary">Order
+                                    Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 3 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Vanilla Dream</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Classic</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+                        <img src="Assets/image/products/product3-removebg-preview.png" class="card-img p-1"
+                            alt="Vanilla Ice Cream">
+                        <div class="row p-1 text-center">
+                            <div class="col-4">
+                                <p class="text-muted">🌼 Vanilla</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🍦 2 scoops</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🥶 Cold</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6"><span class="h4 fw-bold m-0 p-0">$3.99/</span><span
+                                    class="text-muted">cup</span></div>
+                            <div class="col-6 d-flex justify-content-end"><button class="btn btn-primary">Order
+                                    Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 4 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Mint Magic</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Fresh</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+                        <img src="Assets/image/products/518151488_012c012ccc_2x-removebg-preview.png"
+                            class="card-img p-1" alt="Mint Ice Cream">
+                        <div class="row p-1 text-center">
+                            <div class="col-4">
+                                <p class="text-muted">🌿 Mint</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🍦 2 scoops</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🥶 Cold</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6"><span class="h4 fw-bold m-0 p-0">$4.49/</span><span
+                                    class="text-muted">cup</span></div>
+                            <div class="col-6 d-flex justify-content-end"><button class="btn btn-primary">Order
+                                    Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 5 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Mango Mania</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Fruit</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+                        <img src="Assets/image/products/product14-removebg-preview.png" class="card-img p-1"
+                            alt="Mango Ice Cream">
+                        <div class="row p-1 text-center">
+                            <div class="col-4">
+                                <p class="text-muted">🥭 Mango</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🍦 3 scoops</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🥶 Cold</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6"><span class="h4 fw-bold m-0 p-0">$5.99/</span><span
+                                    class="text-muted">cup</span></div>
+                            <div class="col-6 d-flex justify-content-end"><button class="btn btn-primary">Order
+                                    Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 6 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Blueberry Burst</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Berry</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+                        <img src="Assets/image/products/547235148_012c012ccc_2x-removebg-preview.png"
+                            class="card-img p-1" alt="Blueberry Ice Cream">
+                        <div class="row p-1 text-center">
+                            <div class="col-4">
+                                <p class="text-muted">🫐 Blueberry</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🍦 2 scoops</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🥶 Cold</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6"><span class="h4 fw-bold m-0 p-0">$4.99/</span><span
+                                    class="text-muted">cup</span></div>
+                            <div class="col-6 d-flex justify-content-end"><button class="btn btn-primary">Order
+                                    Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 7 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Cookies & Cream</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Dessert</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+                        <img src="Assets/image/products/product.webp" class="card-img p-1"
+                            alt="Cookies & Cream Ice Cream">
+                        <div class="row p-1 text-center">
+                            <div class="col-4">
+                                <p class="text-muted">🍪 Cookies</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🍦 2 scoops</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🥶 Cold</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6"><span class="h4 fw-bold m-0 p-0">$5.49/</span><span
+                                    class="text-muted">cup</span></div>
+                            <div class="col-6 d-flex justify-content-end"><button class="btn btn-primary">Order
+                                    Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream 8 -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm rounded p-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title plus-jakarta-sans-bold">Malai Ice-Cream</h5>
+                                <h6 class="card-subtitle mb-2 text-muted plus-jakarta-sans-regular">Dessert</h6>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <i class="fa-solid fa-heart" style="font-size:1.5rem; color:red"></i>
+                            </div>
+                        </div>
+                        <img src="Assets/image/products/514215896_012c012ccc_2x-removebg-preview.png"
+                            class="card-img p-1" alt="Cookies & Cream Ice Cream">
+                        <div class="row p-1 text-center">
+                            <div class="col-4">
+                                <p class="text-muted">🍪 Cookies</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🍦 2 scoops</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted">🥶 Cold</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6"><span class="h4 fw-bold m-0 p-0">$5.49/</span><span
+                                    class="text-muted">cup</span></div>
+                            <div class="col-6 d-flex justify-content-end"><button class="btn btn-primary">Order
+                                    Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="view d-flex justify-content-center m-3 align-content-center">
+            <button class="btn btn-outline-primary">Show More Ice Creams</button>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="position-relative">
+        <!-- Full-width footer background image -->
+        <img src="Assets/image/footer-bg.jpg" alt="Ice Cream" class="img-fluid w-100"
+            style="position:absolute; top:0; left:0; z-index:0;">
+
+        <!-- Footer content -->
+        <div class="container text-center text-md-start position-relative"
+            style="z-index:1; padding-top: 50px; padding-bottom: 50px;">
+            <div class="row">
+                <!-- Logo + Description -->
+                <div class="col-md-4 mb-14">
+                    <img src="Assets/image/logo.png" alt="Logo" class="img-fluid mb-2"
+                        style="max-width:120px; height:auto;">
+                    <h4 class="fw-bold" style="color:#ff3e7e; font-size:1.5rem;">Blue Sky Summer</h4>
+                    <p class="text-muted" style="color:#ff3e7e;">
+                        Serving happiness in every scoop. <br>
+                        Fresh flavors, creamy delights, and smiles guaranteed.
+                    </p>
+                </div>
+
+                <!-- Explore -->
+                <div class="col-6 col-md-2 mb-4">
+                    <h6 class="fw-bold">Explore</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#Recommendation-IceCream" class="text-muted text-decoration-none">
+                                <i class="bi bi-ice-cream me-1" style="color:#ff71a0; font-size:1.5rem;"></i> Flavors
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Specials" class="text-muted text-decoration-none">
+                                <i class="bi bi-star me-1" style="color:#ff71a0; font-size:1.5rem;"></i> Specials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Offers" class="text-muted text-decoration-none">
+                                <i class="bi bi-tag me-1" style="color:#ff71a0; font-size:1.5rem;"></i> Offers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Contact" class="text-muted text-decoration-none">
+                                <i class="bi bi-envelope me-1" style="color:#ff71a0; font-size:1.5rem;"></i> Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div class="col-6 col-md-2 mb-4">
+                    <h6 class="fw-bold">Community</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-muted text-decoration-none">
+                                <i class="bi bi-calendar-event me-1" style="color:#ff71a0; font-size:1.5rem;"></i>
+                                Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-muted text-decoration-none">
+                                <i class="bi bi-journal-text me-1" style="color:#ff71a0; font-size:1.5rem;"></i> Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-muted text-decoration-none">
+                                <i class="bi bi-star-fill me-1" style="color:#ff71a0; font-size:1.5rem;"></i> Reviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-muted text-decoration-none">
+                                <i class="bi bi-people me-1" style="color:#ff71a0; font-size:1.5rem;"></i> Invite
+                                Friends
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Socials -->
+                <div class="col-6 col-md-2 mb-4">
+                    <h6 class="fw-bold">Follow Us</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-instagram me-2" style="color:#ff71a0; font-size:1.5rem;"></i>
+                            <a href="#" class="text-muted text-decoration-none">Instagram</a>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-facebook me-2" style="color:#ff71a0; font-size:1.5rem;"></i>
+                            <a href="#" class="text-muted text-decoration-none">Facebook</a>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-twitter me-2" style="color:#ff71a0; font-size:1.5rem;"></i>
+                            <a href="#" class="text-muted text-decoration-none">Twitter</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-tiktok me-2" style="color:#f15a8c; font-size:1.5rem;"></i>
+                            <a href="#" class="text-muted text-decoration-none">TikTok</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-light">
+
+            <!-- Bottom -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0 text-muted" class="text-center " >©2025 Blue Sky Summer. <span
+                        class="fw-bold">All rights reserved</span></p>
+                <div class="mt-2 mt-md-0">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js -->
+    <script src="Js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        alert("hey");
+    </script>
+
+</body>
+
+</html>

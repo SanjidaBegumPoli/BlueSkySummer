@@ -44,6 +44,32 @@ include("authentication.php");
     .card {
       background-color: rgba(255, 255, 255, 0.85) !important;
     }
+
+    .social-icons a {
+      font-size: 2rem;
+      color: #fc3c5cff;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #fb2d94ff;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .bg-pink-light {
+      background-color: #ffc0cbff !important;
+
+    }
+
+    .bg-pink-dark {
+      background-color: #FF69B4 !important;
+
+    }
   </style>
 
 </head>
@@ -63,20 +89,23 @@ include("authentication.php");
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Center menu -->
+ 
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="ice-creams.php">Ice-Creams</a></li>
           <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="details.php">Details</a></li>
           <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="about.php">About Us</a></li>
           <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="contact.php">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="cart.php">My Cart</a></li>
+
         </ul>
 
-        <!-- Right side-->
+  
         <div class="d-flex align-items-center gap-3">
           <?php if (isset($_SESSION['auth_user'])): ?>
             <span class="fw-bold " style="color: #fd6a9bff;">
               Hello, <?= htmlspecialchars($_SESSION['auth_user']['username']); ?>
             </span>
+            <a href="profile.php" class="btn btn-outline-light btn-sm me-2">My Profile</a>
             <a href="logout.php" class="btn btn-danger btn-sm">Logout</a>
           <?php else: ?>
             <button class="button" onclick="window.location.href='register.php'">
@@ -94,16 +123,15 @@ include("authentication.php");
 
   <div class="container py-5">
 
-    <!-- Welcome Section -->
     <div class="row mb-4">
       <div class="col-12 text-center">
         <h2 class="fw-bold" style="color: #ff226cff;">Hello, <span style="color: #ff2e74ff;"><?= htmlspecialchars($_SESSION['auth_user']['username']); ?></span>!</h2>
         <p style="color: #ff0c5dff;">Welcome to your dashboard. Access the sections below.</p>
       </div>
     </div>
-    <!-- Dashboard Cards (Full-width stacked) -->
+    
     <div class="row g-4 mb-4">
-      <!-- Ice Creams  -->
+      
       <div class="col-12">
         <a href="ice-creams.php" class="text-decoration-none">
           <div class="card h-100 shadow-sm hover-scale bg-pink-light text-dark p-4">
@@ -116,7 +144,7 @@ include("authentication.php");
         </a>
       </div>
 
-      <!-- Details  -->
+      
       <div class="col-12">
         <a href="details.php" class="text-decoration-none">
           <div class="card h-100 shadow-sm hover-scale bg-pink-dark text-white p-4">
@@ -144,7 +172,7 @@ include("authentication.php");
 
       <!-- Contact Us -->
       <div class="col-12 ">
-        <a href="contact-us.php" class="text-decoration-none">
+        <a href="contact.php" class="text-decoration-none">
           <div class="card h-100 shadow-sm hover-scale bg-pink-dark text-white p-4">
             <div class="card-body text-center">
               <i class="bi bi-telephone-fill display-4 mb-3"></i>
@@ -166,33 +194,7 @@ include("authentication.php");
       </div>
     </div>
 
-    <style>
-      .social-icons a {
-        font-size: 2rem;
-        color: #fc3c5cff;
-        margin: 0 10px;
-        transition: color 0.3s ease;
-      }
 
-      .social-icons a:hover {
-        color: #fb2d94ff;
-      }
-
-      .hover-scale:hover {
-        transform: scale(1.03);
-        transition: transform 0.3s ease-in-out;
-      }
-
-      .bg-pink-light {
-        background-color: #ffc0cbff !important;
-
-      }
-
-      .bg-pink-dark {
-        background-color: #FF69B4 !important;
-
-      }
-    </style>
 
 
     <!-- Bootstrap Icons CDN -->

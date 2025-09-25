@@ -75,6 +75,8 @@ session_start();
           <li class="nav-item"><a class="nav-link" href="ice-creams.php">Ice-Creams</a></li>
           <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
           <li class="nav-item"><a class="nav-link active" href="contact.php">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="cart.php">My Cart</a></li>
+                
         </ul>
         <div class="d-flex justify-content-end">
           <?php if (isset($_SESSION['auth_user'])): ?>

@@ -51,6 +51,7 @@ session_start();
       color: #fd6a9bff;
       font-size: 1.1rem;
     }
+
     @media (min-width: 768px) {
       .mt-n5 {
         margin-top: -3rem !important;
@@ -61,6 +62,32 @@ session_start();
       .mt-n5 {
         margin-top: 0 !important;
       }
+    }
+
+    .social-icons a {
+      font-size: 2rem;
+      color: #fc3c5cff;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #fb2d94ff;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .bg-pink-light {
+      background-color: #ffc0cbff !important;
+
+    }
+
+    .bg-pink-dark {
+      background-color: #FF69B4 !important;
+
     }
   </style>
 </head>
@@ -82,6 +109,7 @@ session_start();
           <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="ice-creams.php">Ice-Creams</a></li>
           <li class="nav-item"><a class="nav-link active plus-jakarta-sans-semi-bold" href="about.php">About Us</a></li>
           <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="contact.php">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link plus-jakarta-sans-semi-bold" href="cart.php">My Cart</a></li>
         </ul>
         <div class="d-flex justify-content-end">
           <?php if (isset($_SESSION['auth_user'])): ?>
@@ -242,6 +270,16 @@ session_start();
           <p class="lead-pink">"Choco cup blew me away! So refreshing and perfect for hot summer days. Will order again!"</p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Social Media Icons -->
+  <div class="row mt-5 ">
+    <div class="col-12 text-center social-icons">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
     </div>
   </div>
 

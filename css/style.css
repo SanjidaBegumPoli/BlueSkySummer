@@ -127,20 +127,20 @@
 }
 
 /* ---------------- IMAGE SECTIONS ---------------- */
-.leftimg,
+/* .leftimg,
 .rightimg {
   border-radius: 0.75rem;
   min-height: 30rem;
-  background: url("../Assets/image/bn3.3.webp") no-repeat center/cover; /* single image */
+  background: url("../Assets/image/bn3.3.webp") no-repeat center/cover; 
   background-origin: content-box;
   background-attachment: fixed;
-  color: #ff637a; /* soft pink text */
+  color: #ff637a; 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Remove middle dividing line */
+
 .row {
   margin: 0 !important;
 }
@@ -148,7 +148,7 @@
 .col {
   padding: 0 !important;
   border: none !important;
-}
+} */
 
 /* ---------------- FILTER BAR ---------------- */
 .filter-bar {
